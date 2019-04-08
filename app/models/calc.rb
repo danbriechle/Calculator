@@ -15,6 +15,11 @@ class Calc
     math_string.scan(/(\d*)([+])(\d*)/).each do |array|
       result += array[0].to_i + array[2].to_i
       end
+  #subtract
+    math_string.scan(/(\d*)([-])(\d*)/).each do |array|
+      result += array[0].to_i - array[2].to_i
+      end
+
 
   result
   end
