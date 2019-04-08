@@ -20,7 +20,6 @@ class Calc
       result += array[0].to_i - array[2].to_i
       end
 
-
   result
   end
 end
