@@ -7,11 +7,11 @@ RSpec.describe "root", type: :feature do
 
   end
 
-  it 'can fill in form' do
+  xit 'can fill in form' do
     visit '/'
 
     fill_in :calculator_input, with: '3*5'
-    
+
     click_button 'Calculate'
 
   end
