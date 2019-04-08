@@ -1,0 +1,10 @@
+<%= form_for :calculator, url: { action: :new }, method: :get do |f| %>
+<%= f.label :input %>
+<%= f.text_field :input %>
+<%= f.submit 'Calculate'%>
+<% end %>
+
+<% unless @result.nil? %>
+<p><%= @previous %></p>
+<p> result: <%= @result %></p>
+<% end %>
