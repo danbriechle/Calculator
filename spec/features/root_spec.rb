@@ -14,6 +14,8 @@ RSpec.describe "root", type: :feature do
 
     click_button 'Calculate'
 
+    save_and_open_page
+
     expect(page).to have_content("result: 15")
     expect(page).to have_content('3*5')
   end

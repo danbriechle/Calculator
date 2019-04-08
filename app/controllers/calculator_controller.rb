@@ -3,7 +3,7 @@ class CalculatorController < ApplicationController
   end
 
   def new
-    @previous = math_params[:input]
+    @previous = "#{math_params[:input]}"
     @result = Calc.calculate(math_params[:input])
     render :index
   end
