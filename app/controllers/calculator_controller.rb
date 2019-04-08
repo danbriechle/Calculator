@@ -3,6 +3,6 @@ class CalculatorController < ApplicationController
   end
 
   def new
-    binding.pry
+    @result = Calc.calculate(params[:calculator][:input])
   end
 end
