@@ -1,5 +1,5 @@
 <%= form_for :calculator, url: { action: :new }, method: :get do |f| %>
-<%= f.label :math_string %>
-<%= f.text_field :math_string %>
+<%= f.label :input %>
+<%= f.text_field :input %>
 <%= f.submit 'Calculate'%>
 <% end %>

@@ -3,5 +3,6 @@ class CalculatorController < ApplicationController
   end
 
   def new
+    binding.pry
   end
 end
