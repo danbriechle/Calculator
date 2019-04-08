@@ -3,3 +3,8 @@
 <%= f.text_field :input %>
 <%= f.submit 'Calculate'%>
 <% end %>
+
+<% unless @result.nil? %>
+<%= @previous %>
+<p> result: <%= @result %></p>
+<% end %>
