@@ -11,6 +11,11 @@ class Calc
       result += array[0].to_i / array[2].to_i
       end
 
+  #add
+    math_string.scan(/(\d*)([+])(\d*)/).each do |array|
+      result += array[0].to_i + array[2].to_i
+      end
+
   result
   end
 end
