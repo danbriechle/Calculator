@@ -15,8 +15,10 @@ RSpec.describe Calc, type: :poro do
 
       it "can preform multiple calculations" do
       input = '5*3+1+6/2+9*100'
+      input_2 = '5*3+1+6/85+9*100'
 
       expect(Calc.calculate(input)).to eq(919)
+      expect(Calc.calculate(input_2)).to eq(916.07)
       end
     end
   end
